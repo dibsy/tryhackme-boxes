@@ -17,4 +17,9 @@ Flag 4:
 gobuster dir -u http://10.10.48.141 -w  /usr/share/wordlists/dirb/common.txt 
 /portal
 ```
+Flag 5
+```
+' or 1=1-- 
 
+A space is provided instead of --+
+```
