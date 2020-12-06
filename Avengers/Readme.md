@@ -22,4 +22,8 @@ Flag 5
 ' or 1=1-- 
 
 A space is provided instead of --+
+
+less /home/ubuntu/flag5.txt
+
+335e2d13f36558ba1e67969a171XXXX
 ```
