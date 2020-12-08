@@ -10,4 +10,32 @@ MAC Address: 02:55:8E:00:45:2F (Unknown)
 
 http://10.10.196.195:3333
 
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                   
+---- Entering directory: http://10.10.196.195:3333/fonts/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                   
+---- Entering directory: http://10.10.196.195:3333/images/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                   
+---- Entering directory: http://10.10.196.195:3333/internal/ ----
+==> DIRECTORY: http://10.10.196.195:3333/internal/css/                             
++ http://10.10.196.195:3333/internal/index.php (CODE:200|SIZE:525)                 
+==> DIRECTORY: http://10.10.196.195:3333/internal/uploads/                         
+                                                                                   
+---- Entering directory: http://10.10.196.195:3333/js/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                   
+---- Entering directory: http://10.10.196.195:3333/internal/css/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+                                                                                   
+---- Entering directory: http://10.10.196.195:3333/internal/uploads/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.                        
+    (Use mode '-w' if you want to scan it anyway)
+
+
 ```
