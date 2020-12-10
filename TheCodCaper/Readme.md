@@ -64,4 +64,7 @@ Parameter: username (POST)
 http://10.10.65.99/2591c98b70119fe624898b1e424b5e91.php
 pingudad:secretpass
 
+find / -name pass -type f 2>/dev/null
+
+
 ```
