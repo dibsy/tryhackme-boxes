@@ -66,5 +66,8 @@ pingudad:secretpass
 
 find / -name pass -type f 2>/dev/null
 
+pinguapingu pinguapingu 
+
+scp LinEnum.sh pingu@10.10.65.99:/tmp
 
 ```
